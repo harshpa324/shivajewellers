@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="output.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!--logo-->
+            <a href="#">
+                <img src="images/logo.jpg" class="w-32" alt="SHIVA JWELLERS">
+            </a>
+            <!--searchbar-->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search">
+                    </i>
+                </span>
+                <input type="text" class="w-full border border-orange-400 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="search">
+                <button class="bg-orange-400 border border-orange-400 text-white px-8 rounded-r-md hover:bg-transparent hover:text-orange-400 transition">search</button>
+            </div>
+            <!--icons-->
+            <div class="flex item-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-orange-400 transition relative">
+                    <div class="text 2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-orange-400 text-white text-xs ">8</span>
+
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-orange-400 transition relative">
+                    <div class="text 2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-orange-400 text-white text-xs ">8</span>
+
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-orange-400 transition relative">
+                    <div class="text 2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                    
+
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- navbar-->
+     <nav class="bg-gray-800">
+        <div class="container flex">
+            <!-- all categories-->
+            <div class="px-8 py-4 bg-orange-400 flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">all categories</span>
+                
+                  <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     
+                  </div>  
+                  
+            </div>
+            <!-- all category end-->
+
+            <!-- navbar links-->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="products.html" class="text-gray-300 hover:text-white transition">Products</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">About us</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">Contact us</a>
+                </div>
+                <a href="#" class="text-gray-300 hover:text-white transition">Login/Register</a>
+            </div>
+        </div>
+     </nav>
+
+
+    <!-- navbar end-->
+
+     <!--login-->
+     <div class="container py-16">
+        <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
+            <h2 class="text-2xl uppercase font-medium mb-1">
+                Create an account
+            </h2>
+            <p class="text-gray-600 mb-6 text-sm">
+                Register if you don't have accountr
+            </p>
+            <form action="">
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Full Name 
+                        </label>
+                        <input type="fullname" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Email Address
+                        </label>
+                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0" placeholder="example@mail.com">
+                    </div>
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Password
+                        </label>
+                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0" placeholder="Enter Your Password">
+                    </div>
+                    
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                           Confirm Password
+                        </label>
+                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0" placeholder="Confirm Your Password">
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="agree" class="text-orange-400 focus:ring-0 rounded-sm cursor-pointer">
+                        <label for="agree" class="text-gray-600 ml-3 cursor-pointer"><a class="mt-4 text-gray-600">I have read and agree to <a href="#" class="text-orange-400">terms & conditions</a></a></label>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="block w-full py-2 text-center bg-orange-400 border border-orange-400 rounded hover:bg-transparent hover:text-orange-400 transition uppercase font-roboto fpnt-medium">Create Account</button>
+                </div>
+            </form>
+            <!--loginwith-->
+            <div class="mt-6 flex justify-center relative">
+                <div class="text-gray-600 uppercase px-3 bg-white z-10 relative">Or Signup with</div>
+                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+                
+            </div>
+            <div class="flex mt-4 gap-3">
+                <a href="#" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto font-medium text-sm hover:bg-blue-700">Facebook</a>
+                <a href="#" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto font-medium text-sm  hover:bg-yellow-500">Google</a>
+            </div>
+            <p class="mt-4 text-gray-600 text-center">Already have a account? <a href="login.html" class="text-orange-400">Login here</a></p>
+        </div>
+     
+    </div>
+    <!--loginedn-->
+    <!--footer-->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3">
+            <!--footer-text-->
+            <div class="col-span-1 space-y-8">
+                <img src="images/logo.jpg" class="w-36 h-20">
+                <p class="text-gray-400">
+                    And I wonder if you know what it feels<br> to find your dream come true.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <!--footer-text end-->
+
+            <!--footer links-->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                  <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                  <div class="mt-4 space-y-4">
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+
+                  </div> 
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                    <div class="mt-4 space-y-4">
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+  
+                    </div> 
+                  </div>
+                  
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                  <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                  <div class="mt-4 space-y-4">
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+
+                  </div> 
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                    <div class="mt-4 space-y-4">
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+  
+                    </div> 
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!--footer links end-->
+        </div>
+    </footer>
+    <!--footer end-->
+    <!--copyright-->
+    <div class="bg-gray-800 py-4">
+    <div class="container flex items-center justify-between">
+        <p class="text-white">©️ Shiva Jwellers - ALL RIGHTS RESERVED</p>
+        
+        <img src="images/logo.jpg" class="h-5">
+        
+    </div></div>
+    <!--end of copyright-->
+</body>
+</html>

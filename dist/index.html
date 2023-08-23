@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="output.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!--logo-->
+            <a href="#">
+                <img src="images/logo.jpg" class="w-32" alt="SHIVA JWELLERS">
+            </a>
+            <!--searchbar-->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search">
+                    </i>
+                </span>
+                <input type="text" class="w-full border border-orange-400 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="search">
+                <button class="bg-orange-400 border border-orange-400 text-white px-8 rounded-r-md hover:bg-transparent hover:text-orange-400 transition">search</button>
+            </div>
+            <!--icons-->
+            <div class="flex item-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-orange-400 transition relative">
+                    <div class="text 2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-orange-400 text-white text-xs ">8</span>
+
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-orange-400 transition relative">
+                    <div class="text 2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-orange-400 text-white text-xs ">8</span>
+
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-orange-400 transition relative">
+                    <div class="text 2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                    
+
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- navbar-->
+     <nav class="bg-gray-800">
+        <div class="container flex">
+            <!-- all categories-->
+            <div class="px-8 py-4 bg-orange-400 flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">all categories</span>
+                
+                  <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/logo.jpg" class="w-5 h-5 object-contain" alt="Dropdown">
+                        <span class="ml-6 bg-gray-300 text-sm">Dropdown</span>
+                     </a>
+                     
+                  </div>  
+                  
+            </div>
+            <!-- all category end-->
+
+            <!-- navbar links-->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="products.html" class="text-gray-300 hover:text-white transition">Products</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">About us</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">Contact us</a>
+                </div>
+                <a href="#" class="text-gray-300 hover:text-white transition">Login/Register</a>
+            </div>
+        </div>
+     </nav>
+
+
+    <!-- navbar end-->
+
+    <!--banner-->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('images/logo.jpg');">
+     <div class="container">
+        <h1 class="text-6xl text-white font-medium mb-4">
+            This banner is for <br> only test purposes
+        </h1>
+        <p class="text-white">
+            Rome wasn't build in a day, so keep workind hard daily. <br>
+            its a marathon.
+        </p>
+        <div class="mt-12">
+            <a href="#" class="bg-orange-400 border border-orange-400 text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-orange-400 transition">View Products</a>
+        </div>
+     </div>
+
+    </div>
+
+    <!--banner-->
+    <!--features-->
+    <div class="container py-16">
+     <div class="w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+        <!--single feature-->
+<div class="border border-orange-400 rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+    <img src="images/logo.jpg" alt="Purity" class="w-12 h-12 object-cover">
+    <div>
+        <h4 class="font-medium capitalize text-lg">Example 1</h4>
+        <p class="text-gray-500 text-sm">Example text</p>
+    </div>
+</div>
+
+        <!--single feature-->
+        <!--single feature-->
+<div class="border border-orange-400 rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+    <img src="images/logo.jpg" alt="Purity" class="w-12 h-12 object-cover">
+    <div>
+        <h4 class="font-medium capitalize text-lg">Example 1</h4>
+        <p class="text-gray-500 text-sm">Example text</p>
+    </div>
+</div>
+
+        <!--single feature-->
+        <!--single feature-->
+<div class="border border-orange-400 rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+    <img src="images/logo.jpg" alt="Purity" class="w-12 h-12 object-cover">
+    <div>
+        <h4 class="font-medium capitalize text-lg">Example 1</h4>
+        <p class="text-gray-500 text-sm">Example text</p>
+    </div>
+</div>
+
+        <!--single feature-->
+
+     </div>   
+    </div>
+    <!--features end-->
+    <!--categories-->
+    <div class="container py-16">
+     <h2 class="text-3xl font-medium text-gray-600 uppercase mb-6">view products by category</h2>
+     <div class="grid grid-cols-3 gap-3">
+        <!--single category-->
+        <div class="relative rounded-sm overflow-hidden group">
+            <img src="images/logo.jpg" alt="Cat1" class="w-full">
+            <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">CAT!</a>
+        </div>
+        <!--single category end-->
+        <!--single category-->
+        <div class="relative rounded-sm overflow-hidden group">
+            <img src="images/logo.jpg" alt="Cat1" class="w-full">
+            <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">CAT!</a>
+        </div>
+        <!--single category end-->
+        <!--single category-->
+        <div class="relative rounded-sm overflow-hidden group">
+            <img src="images/logo.jpg" alt="Cat1" class="w-full">
+            <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">CAT!</a>
+        </div>
+        <!--single category end-->
+        <!--single category-->
+        <div class="relative rounded-sm overflow-hidden group">
+            <img src="images/logo.jpg" alt="Cat1" class="w-full">
+            <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">CAT!</a>
+        </div>
+        <!--single category end-->
+        <!--single category-->
+        <div class="relative rounded-sm overflow-hidden group">
+            <img src="images/logo.jpg" alt="Cat1" class="w-full">
+            <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">CAT!</a>
+        </div>
+        <!--single category end-->
+        <!--single category-->
+        <div class="relative rounded-sm overflow-hidden group">
+            <img src="images/logo.jpg" alt="Cat1" class="w-full">
+            <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">CAT!</a>
+        </div>
+        <!--single category end-->
+
+
+     </div>   
+    </div>
+    <!--categories end--> 
+    
+    
+    
+<!--prodcuts-->
+<div class="container pb-16">
+    <h2 class="text-2xl font-medium text-geay-800 uppercase mb-6">
+        NEW PRODUCTS
+    </h2>
+    <div class="grid grid-cols-4 gap-6">
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        
+        
+    </div>
+</div>
+<!--prodcuts end-->
+<!--ad section-->
+<div class="container pb-16">
+    <a href="#">
+        <img src="images/logo.jpg" class="w-full">
+    </a>
+</div>
+<!--ad section-->
+<!--prodcuts-->
+<div class="container pb-16">
+    <h2 class="text-2xl font-medium text-geay-800 uppercase mb-6">
+        NEW PRODUCTS
+    </h2>
+    <div class="grid grid-cols-4 gap-6">
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        <!--single product-->
+        <div class="bg-white shadow rounded overflow-hiddem group">
+            <!--product image-->
+            <div class="relative">
+                <img src="images/logo.jpg" class="w-full">
+                <div class="absolute inset-0 flex bg-black bg-opacity-40 items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-orange-400 flex items-center justify-center hover:bg-gray-800 transition">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+             <!--product image end-->
+            <!--product content-->
+            <div class="pt-4 pb-3 px-4">
+                <a href="#">
+                    <h4 class="uppercase font-medium text-2xl mb-2 text-gray-800 hover:text-primary transition">product 1</h4>
+                </a>
+                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-orange-400 font-semibold">Rs. 100</p>
+                    <p class="text-sm text-orange-400 line-through">Rs. 100</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-xs text-gray-500 ml-3">150</div>
+                </div>
+            </div>
+            <a href="#" class="block w-full py-1 text-center text-white bg-orange-400 border-orange-400 rounder-b hover:bg-transparent hover:text-orange-400 transition">Add to cart</a>
+            <!--end of content-->
+        </div>
+        <!--End single product-->
+        
+        
+    </div>
+</div>
+<!--prodcuts end-->
+    <!--footer-->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3">
+            <!--footer-text-->
+            <div class="col-span-1 space-y-8">
+                <img src="images/logo.jpg" class="w-36 h-20">
+                <p class="text-gray-400">
+                    And I wonder if you know what it feels<br> to find your dream come true.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-greay-400 hover:text-gray-500">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <!--footer-text end-->
+
+            <!--footer links-->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                  <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                  <div class="mt-4 space-y-4">
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+
+                  </div> 
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                    <div class="mt-4 space-y-4">
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+  
+                    </div> 
+                  </div>
+                  
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                  <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                  <div class="mt-4 space-y-4">
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+
+                  </div> 
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3> 
+                    <div class="mt-4 space-y-4">
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                      <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+  
+                    </div> 
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!--footer links end-->
+        </div>
+    </footer>
+    <!--footer end-->
+    <!--copyright-->
+    <div class="bg-gray-800 py-4">
+    <div class="container flex items-center justify-between">
+        <p class="text-white">©️ Shiva Jwellers - ALL RIGHTS RESERVED</p>
+        
+        <img src="images/logo.jpg" class="h-5">
+        
+    </div></div>
+    <!--end of copyright-->
+</body>
+</html>
